@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <style>
+        html, body {
+            margin : 0px;
+            padding : 0px;
+        }
+        #game {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color:moccasin;
+            text-align: center;
+        }
+        #game #player {
+            position: absolute;
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            top : 50px;
+            left : 50px;
+            border-radius: 50%;
+        }
+
+        #game {
+            background-color: paleturquoise;
+        }
+
+        #game .other {
+            position: absolute;
+            background-color: blue;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            top : 50px;
+            left : 50px;
+        }
+
+        #welcome .msg {
+            font-size: 24px;
+            text-align: center;
+            top: 50%;
+            position: relative;
+            transform: translateY(-50%); 
+        }
+        #welcome {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: teal;
+            text-align: center;
+        }
+
+        input[type=text] {
+            border: none;
+            padding : 8px;
+        }
+
+        h1 b{
+            color :white;
+        }
+
+        h1 {
+            color : yellow;
+        }
+    </style>
+  </head>
+  <body>
+  
+    <div id="welcome">
+        <div class="msg">
+            <h1>Ball <b>Game</b></h1>
+            <br/>
+            <input type="text" placeholder="Nick Name" id="nick" />
+            <input type="button" onclick="startGame();" value="Start Game">
+
+        </div>
+    </div>
+
+    <div id="game" style="display: none;">
+
+    </div>
+  <script src="game.js"></script>
+  </body>
+</html>

@@ -13,4 +13,4 @@ cd server
 ballerina run server.bal
 ```
 
-- Open `gameclient/index.html` from browser multiple browser windows
+- Open `gameclient/index.html` from multiple browser windows

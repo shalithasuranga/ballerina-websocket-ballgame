@@ -10,7 +10,7 @@ map<http:WebSocketListener> connections;
 @http:ServiceConfig {
     basePath: "/gameserver"
 }
-service<http:Service> ChatAppUpgrader bind { port: 9090 } {
+service<http:Service> GameUpgrader bind { port: 9090 } {
 
 
     @http:ResourceConfig {
